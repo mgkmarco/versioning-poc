@@ -30,7 +30,7 @@ namespace TestApp
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "TestApp", Version = "v1"}); });
         }
 
-        public void MethodForCoolFeature(IServiceCollection collection)
+        public void MethodForCoolFeature(IServiceCollection collection, string firstName)
         {
             //TODO put some logic in here
         }
