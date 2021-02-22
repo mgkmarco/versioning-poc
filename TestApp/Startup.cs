@@ -26,10 +26,13 @@ namespace TestApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //This is a comment
-            //This is another comment
             services.AddControllers();
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "TestApp", Version = "v1"}); });
+        }
+
+        public void MethodForCoolFeature(IServiceCollection collection)
+        {
+            //TODO put some logic in here
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
