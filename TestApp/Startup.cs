@@ -27,6 +27,7 @@ namespace TestApp
         public void ConfigureServices(IServiceCollection services)
         {
             //This is a comment
+            //This is another comment
             services.AddControllers();
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "TestApp", Version = "v1"}); });
         }
